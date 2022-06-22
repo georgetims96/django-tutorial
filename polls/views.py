@@ -34,8 +34,8 @@ def vote(request, question_id):
     selected_choice.votes += 1
     selected_choice.save()
     # FIXME N.B. should ALWAYS return an HTTPResponse
-    # redirect after successfully dealing with POST 
-    #. This prevents data from being submitted twice
+    # redirect after successfully dealing with POST. 
+    # This prevents data from being submitted twice
     # if a user goes back.
 
     # FIXME figure out logic of reverse function here
